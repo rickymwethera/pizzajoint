@@ -50,7 +50,59 @@
                 <option value="14">Chicken and mushroom</option>
                 <option value="15">Peri-Peri Chicken</option>
             </select>
+            <br><br>
+            <label>Pizza Size : </label>
+            <select id="pSize">
+                <option value="1">Small</option>
+                <option value="2">Medium</option>
+                <option value="3">Large</option>
+                <option value="4">Extra Large</option>
+                
+            </select>
+            <br><br>
+            <label>Pizza topping : </label>
+            <select id="myList">
+                <option value="1">Mushrooms</option>
+                <option value="2">Pepperoni</option>
+                <option value="3">Sausage</option>
+                <option value="4">Bacon</option>
+                <option value="5">Extra Cheese</option>
+                <option value="6">Green Peppers</option>
+                <option value="7">Pineaple</option>
+                <option value="8">Spinach</option>
+                <option value="9">Onions</option>
+                <option value="10">Black olives</option>
+              
+            </select>
+            <br><br>
+            <label>Number of pizzas</label>
+            <input type="text" id="numberofPizzas" value="1">
+            <br><br>
+            <input id="placeOrder" type="button" class="btn btn-primary" value="PLACE ORDER" onclick="placeOrder();">
+            <div id="price"></div>
+            <br>
+            <br>
+            <div class="delivery">
+            <h2><b>Delivery Services</b></h2></div>
+            <p><b>We use very convinient delivery motorcycles that assure delivery in less than 30 minutes for those in the Nairobi Area</b></p>
+            <p>Do you want your pizza delivered to you right at your doorstep?</p>
+            <input type="radio" name="yesno" id="yesno" value="Yes">Yes<br>
+            <input type="radio" name="yesno" value="No" > I'll pick it up myself<br><br>
+            <input id="checkOut" type="button" class="btn btn-primary" value="CHECKOUT" onclick="checkOut();">
         </form>
-    </div>
+        </div>
+        <div class="gallery">
+        <h5>Here is what we have available. This should make it easier for you to choose what you'd like to order</h5></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4" id="mdeluxe"> 
+                    <img src="images/img1.jpg">
+                </div>
+                <div class="col-md-4" id="hawaiian">
+                    <img src="images/hawaiian.jpeg">
+                </div>
+
+            </div>
+        </div>
 </body>
 </html>
