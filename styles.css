@@ -1,0 +1,38 @@
+.welcome {
+    background-image: url(images/zzaback\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45em;
+    padding: 0%;
+    border: 0em;
+    
+}
+.title {
+    color: white;
+    margin-left: 30%;
+    margin-top:0;
+}
+ul {
+    margin: 0%;
+    padding: 0%;
+    float: right;
+    list-style-type: none;
+}
+li {
+    display: inline;
+   
+
+ }
+ a {
+     display: block;
+     padding: 8px;
+     background-color: white;
+ }
+ .btn1 {
+     padding: 16px 32px;
+     margin-left: 37em;
+     margin-top: 27em;
+ }
+ body {
+     margin-top: 0em;
+ }
