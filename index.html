@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="js/jquery.js"></script>
     <title>RICKS' PIZZA</title>
 </head>
 <body>
@@ -31,9 +33,9 @@
         <h2><b>Great, time to order. Fill in the details of the form below to order</b></h2>
         <h5><b>If you dont know what you want to order yet, click here to go through what is available</b></h5>
         <br><br>
-        <form>
+        <form id="pizza">
             <label>Pizza type : </label>
-            <select id="myList">
+            <select id="pType">
                 <option value="1">Meat Deluxe</option>
                 <option value="2">Hawaiian</option>
                 <option value="3">Chicken Hawaiian</option>
@@ -53,32 +55,42 @@
             <br><br>
             <label>Pizza Size : </label>
             <select id="pSize">
-                <option value="1">Small</option>
-                <option value="2">Medium</option>
-                <option value="3">Large</option>
-                <option value="4">Extra Large</option>
+                <option value="1">Small @ksh 600</option>
+                <option value="2">Medium @ksh 900</option>
+                <option value="3">Large @ksh 1300</option>
+                <option value="4">Extra Large @ksh 1600</option>
                 
             </select>
             <br><br>
             <label>Pizza topping : </label>
-            <select id="myList">
-                <option value="1">Mushrooms</option>
-                <option value="2">Pepperoni</option>
-                <option value="3">Sausage</option>
-                <option value="4">Bacon</option>
-                <option value="5">Extra Cheese</option>
-                <option value="6">Green Peppers</option>
-                <option value="7">Pineaple</option>
-                <option value="8">Spinach</option>
-                <option value="9">Onions</option>
-                <option value="10">Black olives</option>
+            <select id="toppings">
+                <option value="1">Mushrooms @ksh 50</option>
+                <option value="2">Pepperoni @ksh 50</option>
+                <option value="3">Sausage @ksh 50</option>
+                <option value="4">Bacon @ksh 50</option>
+                <option value="5">Extra Cheese @ksh 50</option>
+                <option value="6">Green Peppers @ksh 50</option>
+                <option value="7">Pineaple @ksh 50</option>
+                <option value="8">Spinach @ksh 50</option>
+                <option value="9">Onions @ksh 50</option>
+                <option value="10">Black olives @ksh 50</option>
               
             </select>
             <br><br>
-            <label>Number of pizzas</label>
-            <input type="text" id="numberofPizzas" value="1">
+            <label>Pizza crust : </label>
+            <select id="crust">
+                <option value="1">Thin Crust @ksh 200</option>
+                <option value="2">Cheese-Stuffed Crust @ksh 300</option>
+                <option value="3">Flatbread @ksh 250</option>
+                <option value="4">Chicago Deep Dish @ksh 400</option>
+                
+            </select>
             <br><br>
-            <input id="placeOrder" type="button" class="btn btn-primary" value="PLACE ORDER" onclick="placeOrder();">
+            <label>Number of pizzas</label>
+            <input type="number" id="numberofPizzas" value="1">
+            <br><br>
+            <!-- <input id="placeOrder" type="button" class="btn btn-primary" value="PLACE ORDER" onclick="placeOrder();"> -->
+            <button class="btn btn-primary" type="submit" onclick="placeOrder()">PLACE ORDER</button>
             <div id="price"></div>
             <br>
             <br>
@@ -89,6 +101,11 @@
             <input type="radio" name="yesno" id="yesno" value="Yes">Yes<br>
             <input type="radio" name="yesno" value="No" > I'll pick it up myself<br><br>
             <input id="checkOut" type="button" class="btn btn-primary" value="CHECKOUT" onclick="checkOut();">
+            <br>
+            <br>
+            <div class="checkoutdet">
+                <h4><b>CHECKOUT MENU </b></h4>
+            </div>
         </form>
         </div>
         <br>
@@ -151,10 +168,6 @@
             <h2><b><u>ABOUT US</u></b></h2>
         </div>
         
-        <p>Ricks' Pizza was founded in the late 90s by the late Ricky Mwethera. After his trip to italy, the food culture he saw there
-            inspired him to bring that food culture back to his home country ,Kenya. He and two of his friends started as a small establishment 
-            and braced through the tough times, to get where we are today. Our pizza is considered as the closest you can get to having a full
-            italian culture and through the authenticity is how we got to be one of the top in East Africa.
-        </p>
+        
         
 </html>
