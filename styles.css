@@ -2,7 +2,7 @@
     background-image: url(images/zzaback\ 1.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45em;
+    height: 50em;
     padding: 0%;
     border: 0em;
     
@@ -44,4 +44,7 @@ li {
  }
  .about {
      text-align: center;
+ }
+ .checkoutdet {
+     display: none;
  }
