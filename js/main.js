@@ -55,3 +55,12 @@ function placeOrder() {
 
 
 }
+function delivery() {
+    event.preventDefault();
+    var location= document.getElementById("location").value;
+    var name = document.getElementById("names").value;
+
+    if (location =="" && name == "") {
+        alert("PLEASE ENTER YOUR DELIVERY DETAILS");
+    } 
+}
