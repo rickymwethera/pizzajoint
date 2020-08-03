@@ -49,7 +49,7 @@ function placeOrder() {
 
     total = total * numPizza;
     document.getElementById("price").innerHTML = 
-    ("your total bill comes to " + total);
+    ("<b>your total bill comes to ksh</b> " + total);
 
     
 
@@ -63,4 +63,5 @@ function delivery() {
     if (location =="" && name == "") {
         alert("PLEASE ENTER YOUR DELIVERY DETAILS");
     } 
+
 }
