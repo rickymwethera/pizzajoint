@@ -7,25 +7,30 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="js/main.js"></script>
     <script src="js/jquery.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>RICKS' PIZZA</title>
 </head>
 <body>
     <div class="welcome">
         <header>
-            <img src="images/logo 1 (3).svg">
+           
             <nav>
                 <ul>
                     <li><a href="default">Home</a></li>
-                    <li><a href="order">Contact</a></li>
+                    <li><a href="socials/social_icons/">Contact</a></li>
                     <li><a href="about">Order</a></li>
                   </ul>
             </nav>
         </header>
         <div class="title">
-            <h1>RICKS PIZZA</h1>
-            <h2>The only Pizza place that makes your tastebuds sing with joy</h2>
+            <h1><b>RICKS PIZZA</b></h1>
+            <h2>The only Pizza place that makes your tastebuds <br>sing with joy</h2>
+        </div> <br><br><br><br>
+        <div class="intro">
+            <h4><b>Welcome to the most well respected restaurant in the whole of East Africa<br>
+            You're expectations are high and we hope to exceed them</b></h4>
         </div>
-        <button class="btn1">ORDER NOW</button>
+        <button class="btn1" a href="#pizza">ORDER NOW</button>
     </div>
     <br>
     <br>
@@ -89,7 +94,7 @@
             <label>Number of pizzas</label>
             <input type="number" id="numberofPizzas" value="1">
             <br><br>
-            <!-- <input id="placeOrder" type="button" class="btn btn-primary" value="PLACE ORDER" onclick="placeOrder();"> -->
+           
             <button class="btn btn-primary" type="submit" onclick="placeOrder()">PLACE ORDER</button>
             <br>
             <br>
@@ -99,7 +104,8 @@
             <div class="delivery">
             <h2><b>Delivery Services</b></h2></div>
             <p><b>We use very convinient delivery motorcycles that assure delivery in less than 30 minutes for those in the Nairobi Area</b></p>
-            <p>Do you want your pizza delivered to you right at your doorstep?<br>(You will be required to incur delivery costs if you select yes.)</p>
+            <p>Do you want your pizza delivered to you right at your doorstep?<br>(You will be required to incur delivery costs if you select yes.)
+            Delivery = ksh 150</p>
             <input type="radio" name="yesno" id="yesno" value="Yes">Yes<br>
             <input type="radio" name="yesno" value="No" > I'll pick it up myself<br><br>
             <input id="checkOut" type="button" class="btn btn-primary" value="CHECKOUT" onclick="checkOut();">
