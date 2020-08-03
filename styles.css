@@ -9,8 +9,10 @@
 }
 .title {
     color: white;
-    margin-left: 30%;
+    margin-left: 9%;
     margin-top:0;
+    text-align: center;
+
 }
 ul {
     margin: 0%;
@@ -67,4 +69,11 @@ li {
  }
 .footer {
     text-align: center;
+}
+.body {
+    font-family: 'Poppins';
+}
+.intro {
+    color: white;
+    
 }
